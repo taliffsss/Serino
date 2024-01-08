@@ -117,3 +117,9 @@ Response:
 "message":  "Login successful"
 }
 ```
+
+### Run Testing
+
+```
+npm test
+```
