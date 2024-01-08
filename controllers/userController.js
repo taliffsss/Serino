@@ -24,7 +24,7 @@ const loginUser = async (req, res) => {
     const passwordMatch = await user.comparePassword(password);
 
     if (!passwordMatch) {
-      return res.status(401).json({ error: "Invalid password." });
+      return res.status(401).json({ error: "Invalid credentials" });
     }
 
     // Password is correct, generate JWT token
